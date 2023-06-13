@@ -1,0 +1,134 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+Fonts
+Quincy CF Regular
+font-family: "quincy-cf", serif;
+font-weight: 400;
+font-style: normal;
+
+Quincy CF Regular Italic
+font-family: "quincy-cf", serif;
+font-weight: 400;
+font-style: italic;
+
+Quincy CF Bold
+font-family: "quincy-cf", serif;
+font-weight: 700;
+font-style: normal;
+
+Quincy CF Bold Italic
+font-family: "quincy-cf", serif;
+font-weight: 700;
+font-style: italic;
+
+font-family: "quincy-cf", serif;
+font-weight: 500;
+font-style: normal;
+/*******************************************/
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f6ecea;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0rem;
+  margin: 0;
+  align-items: center;
+  color: dimgray;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: black;
+  font-size: 1.1rem;
+  height: 150px;
+  padding: 0 ;
+}
+.secondary{
+  height: 16vw;
+}
+nav div{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.toggle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 40px;
+  padding: 0%;
+}
+.toggle .bar{
+  border-radius: 10%;
+  height: 1px;
+  width: 100%;
+  background-color:dimgrey
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.links ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.links ul li{
+ padding: 1rem;
+}
+.links ul li:hover{
+  background-color: maroon;
+}
+.links ul li:hover a{
+  color: antiquewhite;
+}
+
+#brand{
+  font-family: "quincy-cf", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 35px;
+  line-height: 30px;
+  color: #05344e
+}
+button{
+  background-color: #05344e;
+  border-radius: 0;
+  border: solid .7px black;
+  padding: 20px;
+  color: antiquewhite;
+}
+button:hover{
+  background-color: maroon;
+}
+
+.secondary{
+  display: none;
+}
+@media screen and (max-width: 768px){
+  .secondary{
+    display: flex;
+  }
+  .full{
+    display: none;
+  }
+  
+}
