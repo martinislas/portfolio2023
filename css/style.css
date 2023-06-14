@@ -65,7 +65,7 @@ nav div{
   justify-content: center;
   align-items: center; 
 }
-.toggle{
+#toggle{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -73,7 +73,7 @@ nav div{
   height: 40px;
   padding: 0%;
 }
-.toggle .bar{
+#toggle .bar{
   border-radius: 10%;
   height: 1px;
   width: 100%;
@@ -103,9 +103,9 @@ a{
 
 #brand{
   font-family: "quincy-cf", serif;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
-  font-size: 35px;
+  font-size: 40px;
   line-height: 30px;
   color: #05344e
 }
@@ -130,5 +130,18 @@ button:hover{
   .full{
     display: none;
   }
-  
+}
+
+#menu{
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color:darkgray;
+  display: none;
+}
+#menu li{
+  padding: 1rem;
+  font-size: 3rem;
+  margin: 0;
 }
