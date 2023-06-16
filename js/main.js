@@ -1,8 +1,8 @@
+const toggle = document.getElementById('toggle');
+const menu = document.getElementById('menu');
 
-const toggle = document.getElementById('toggle')
-const menu = document.getElementById('menu')
+function displayMenu() {
+  console.log('this is a test');
+  menu.classList.toggle('active')}
 
-toggle.addEventListener('click', () => {
-  menu.style.display = 'flex'
-  console.log('test');
-})
+document.addEventListener('click', displayMenu);

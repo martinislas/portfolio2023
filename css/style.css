@@ -65,18 +65,18 @@ nav div{
   justify-content: center;
   align-items: center; 
 }
-#toggle{
+#toggle {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 40px;
   height: 40px;
-  padding: 0%;
+  padding: 0 30px;
+  cursor: pointer;
 }
 #toggle .bar{
   border-radius: 10%;
   height: 1px;
-  width: 100%;
+  width: 40%;
   background-color:dimgrey
 }
 a{
@@ -126,10 +126,21 @@ button:hover{
 @media screen and (max-width: 768px){
   .secondary{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: ;
   }
   .full{
     display: none;
   }
+}
+.secondary div{
+  width: 30%
+}
+
+#bar{
+  width: 100%;
 }
 
 #menu{
@@ -139,9 +150,14 @@ button:hover{
   padding: 0;
   background-color:darkgray;
   display: none;
+  flex-direction: column;
 }
+#menu.active{
+  display: flex;
+}
+
 #menu li{
-  padding: 1rem;
-  font-size: 3rem;
+  padding: 2rem;
+  font-size: 2.2rem;
   margin: 0;
 }
